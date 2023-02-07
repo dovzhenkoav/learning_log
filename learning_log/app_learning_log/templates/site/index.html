@@ -1,13 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Learning Logs</title>
-</head>
-<body>
-    <h3>Learning Log</h3>
+{% extends 'site/base.html' %}
 
-    <p>Learning Log helps you keep track of your learning, for any topic you're learning about</p>
+{% block title %}
+Learning Logs
+{% endblock %}
 
-</body>
-</html>
+
+
+{% block content %}
+  <h3>Learning Log</h3>
+
+  <p>Learning Log helps you keep track of your learning, for any topic you're learning about</p>
+{% endblock %}
