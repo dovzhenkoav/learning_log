@@ -23,4 +23,6 @@ Topic: {{ topic }}
     {% endfor %}
 </ul>
 
+<a href="{% url 'new_entry'  topic.id %}">Add a new topic</a>
+
 {% endblock %}
