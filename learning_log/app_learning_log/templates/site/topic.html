@@ -17,6 +17,9 @@ Topic: {{ topic }}
         <li>
           <p>{{entry.date_add|date:"d M Y - H:i"}}</p>
           <p>{{entry.text|linebreaks}}</p>
+            <p>
+                <a href="{% url 'edit_entry' entry.id %}">Edit</a>
+            </p>
         </li>
     {% empty %}
         <li>No entries in this topic.</li>

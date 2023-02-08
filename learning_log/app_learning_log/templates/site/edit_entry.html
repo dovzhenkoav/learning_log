@@ -1,0 +1,22 @@
+{% extends 'site/base.html' %}
+
+{% block title %}
+Edit entry
+{% endblock %}
+
+
+
+{% block content %}
+
+<p>Edit entry: </p>
+
+<form action="{% url 'edit_entry' entry.id %}" method='post'>
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button name="Submit">save changes</button>
+
+</form>
+
+
+
+{% endblock %}
