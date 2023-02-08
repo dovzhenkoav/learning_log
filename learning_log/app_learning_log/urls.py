@@ -1,10 +1,11 @@
 from django.urls import path
-from .views import index, topics, topic
+from .views import index, topics, topic, new_topic
 
 
 urlpatterns = [
     path('', index, name='index'),
     path('topics/', topics, name='topics'),
     path('topics/<int:topic_id>/', topic, name='topic'),
+    path('new_topic/', new_topic, name='new_topic'),
 
 ]
