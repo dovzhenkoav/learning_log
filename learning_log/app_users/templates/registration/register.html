@@ -1,0 +1,15 @@
+{% extends "site/base.html" %}
+
+{% block content %}
+
+
+
+<form method="post" action="{% url 'register' %}">
+    {% csrf_token %}
+    {{ form.as_p }}
+
+    <button name="submit">register</button>
+    <input type="hidden" name="text" value="{% url 'index' %}">
+</form>
+
+{% endblock %}
